@@ -1,17 +1,17 @@
 package fp.utiles;
 
-/**
+/**   
  * @author reinaqu
- * Clase de utilidad con métodos para facilitar la gestión de restricciones.
+ * Clase de utilidad con mï¿½todos para facilitar la gestiï¿½n de restricciones.
  */
 public class Checkers {
 
 	/**
 	 * @param textoRestriccion
-	 *     Mensaje que se incluirá en la excepción elevada
+	 *     Mensaje que se incluirï¿½ en la excepciï¿½n elevada
 	 * @param condicion
-	 *     Expresión booleana que ha de cumplirse para que no se eleve una excepción
-	 * @throws IllegalArgumentException si no se cumple la condición
+	 *     Expresiï¿½n booleana que ha de cumplirse para que no se eleve una excepciï¿½n
+	 * @throws IllegalArgumentException si no se cumple la condiciï¿½n
 	 *  
 	 */
 	public static void check(String textoRestriccion, Boolean condicion) {
@@ -26,8 +26,8 @@ public class Checkers {
 	}
 
 	/**
-	 * @param parametros Lista de parámetros para los que se quiere realizar una comprobación de nulidad.
-	 * @throws IllegalArgumentException si alguno de los parámetros es nulo.
+	 * @param parametros Lista de parï¿½metros para los que se quiere realizar una comprobaciï¿½n de nulidad.
+	 * @throws IllegalArgumentException si alguno de los parï¿½metros es nulo.
 	 */
 	public static void checkNoNull(Object... parametros) {
 		for (int i = 0; i < parametros.length; i++) {
@@ -36,7 +36,7 @@ public class Checkers {
 						Thread.currentThread().getStackTrace()[2].getClassName() +
 						"." + 
 						Thread.currentThread().getStackTrace()[2].getMethodName() +
-						": el parámetro " + (i + 1) + " es nulo");
+						": el parï¿½metro " + (i + 1) + " es nulo");
 			}
 		}
 	}
